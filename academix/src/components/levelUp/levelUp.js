@@ -2,7 +2,7 @@ import React from "react";
 import "../levelUp/levelUp.css";
 import Star3 from "../../assets/Star3.png";
 
-function Levelup() {
+export const SignInBtn = () => {
   return (
     <div className="levelup">
       <div className="left">
@@ -18,5 +18,3 @@ function Levelup() {
     </div>
   );
 }
-
-export default Levelup;

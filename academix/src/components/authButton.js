@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button, Typography} from '@mui/material';
 import { FcGoogle } from 'react-icons/fc';
- 
 
 export const SignInBtn = () => {
   return (

@@ -5,7 +5,7 @@ import Star1 from "../../assets/Star1.png";
 import Star2 from "../../assets/Star2.png";
 import Star3 from "../../assets/Star3.png";
 
-function Main() {
+export const SignInBtn = () => {
   return (
     <div className="main">
       <div className="main-container">
@@ -52,5 +52,3 @@ function Main() {
     </div>
   );
 }
-
-export default Main;

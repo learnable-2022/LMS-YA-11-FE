@@ -7,7 +7,7 @@ import finance from "../../assets/finance.png";
 import music from "../../assets/music.png";
 import cooking from "../../assets/cooking.png";
 
-function Range() {
+export const SignInBtn = () => {
   return (
     <div className="range">
       <div className="range-header">
@@ -50,5 +50,3 @@ function Range() {
     </div>
   );
 }
-
-export default Range;

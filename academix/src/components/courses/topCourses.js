@@ -14,7 +14,7 @@ import starfull from "../../assets/starfull.png";
 import starempty from "../../assets/starempty.png";
 import starhalf from "../../assets/starhalf.png";
 
-function Topcourses() {
+export const SignInBtn = () => {
   return (
     <div className="topcourses">
       <div className="headline">
@@ -139,5 +139,3 @@ function Topcourses() {
     </div>
   );
 }
-
-export default Topcourses;

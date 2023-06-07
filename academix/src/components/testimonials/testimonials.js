@@ -4,7 +4,7 @@ import testimonial1 from "../../assets/testimonial1.png";
 import testimonial2 from "../../assets/testimonial2.png";
 import testimonial3 from "../../assets/testimonial3.png";
 
-function Testimonials() {
+export const SignInBtn = () => {
   return (
     <div className="testimonials">
       <h2>
@@ -49,5 +49,3 @@ function Testimonials() {
     </div>
   );
 }
-
-export default Testimonials;

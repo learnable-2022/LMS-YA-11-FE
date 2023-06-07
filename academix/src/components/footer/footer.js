@@ -2,7 +2,7 @@ import React from "react";
 import "../footer/footer.css";
 import logowhite from "../../assets/logowhite.png";
 
-function Footer() {
+export const SignInBtn = () => {
   return (
     <div className="footer">
       <div className="footer-nav">
@@ -47,5 +47,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

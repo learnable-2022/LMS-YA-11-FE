@@ -9,7 +9,7 @@ import Levelup from "../components/levelUp/levelUp.js";
 import Newcourses from "../components/courses/newCourses.js";
 import Footer from "../components/footer/footer.js";
 
-function Landingpage() {
+export default function Landingpage() {
   return (
     <>
       <Nav />
@@ -24,5 +24,3 @@ function Landingpage() {
     </>
   );
 }
-
-export default Landingpage;

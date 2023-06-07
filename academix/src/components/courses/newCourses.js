@@ -11,7 +11,7 @@ import melodies from "../../assets/melodies.png";
 import marketing from "../../assets/marketing.png";
 import unleash from "../../assets/unleash.png";
 
-function Newcourses() {
+export const SignInBtn = () => {
   return (
     <div className="newcourses">
       <div className="headline">
@@ -80,5 +80,3 @@ function Newcourses() {
     </div>
   );
 }
-
-export default Newcourses;
