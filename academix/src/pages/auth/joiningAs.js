@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "../components/radioForm/form";
+import Form from "../../components/radioForm/form";
 
-export default function Joiningas() {
+export default function JoiningAs() {
   return (
     <div className="joiningas" color="white">
       <Form />
