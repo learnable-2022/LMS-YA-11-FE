@@ -4,7 +4,7 @@ import testimonial1 from "../../assets/testimonial1.png";
 import testimonial2 from "../../assets/testimonial2.png";
 import testimonial3 from "../../assets/testimonial3.png";
 
-export const SignInBtn = () => {
+export const Testimonials = () => {
   return (
     <div className="testimonials">
       <h2>

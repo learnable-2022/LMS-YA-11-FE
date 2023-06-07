@@ -11,7 +11,7 @@ import melodies from "../../assets/melodies.png";
 import marketing from "../../assets/marketing.png";
 import unleash from "../../assets/unleash.png";
 
-export const SignInBtn = () => {
+export const NewCourses = () => {
   return (
     <div className="newcourses">
       <div className="headline">

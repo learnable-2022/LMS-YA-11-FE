@@ -2,7 +2,7 @@ import React from "react";
 import "../levelUp/levelUp.css";
 import Star3 from "../../assets/Star3.png";
 
-export const SignInBtn = () => {
+export const LevelUp = () => {
   return (
     <div className="levelup">
       <div className="left">

@@ -2,7 +2,7 @@ import React from "react";
 import "./form.css";
 import mainlogo from "../../assets/mainlogo.png";
 
-export const SignInBtn = () => {
+export const Form = () => {
   return (
     <div className="form-container">
       <div className="nav-logo">

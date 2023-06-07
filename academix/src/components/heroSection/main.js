@@ -5,7 +5,7 @@ import Star1 from "../../assets/Star1.png";
 import Star2 from "../../assets/Star2.png";
 import Star3 from "../../assets/Star3.png";
 
-export const SignInBtn = () => {
+export const Main = () => {
   return (
     <div className="main">
       <div className="main-container">

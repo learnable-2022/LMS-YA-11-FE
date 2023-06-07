@@ -6,7 +6,7 @@ import instructor3 from "../../assets/instructor3.png";
 import instructor4 from "../../assets/instructor4.png";
 import instructor5 from "../../assets/instructor5.png";
 
-export const SignInBtn = () => {
+export const Instructors= () => {
   return (
     <div className="instructors">
       <h3>Courses taught by World Class Instructors</h3>

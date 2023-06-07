@@ -2,7 +2,7 @@ import React from "react";
 import "../footer/footer.css";
 import logowhite from "../../assets/logowhite.png";
 
-export const SignInBtn = () => {
+export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-nav">

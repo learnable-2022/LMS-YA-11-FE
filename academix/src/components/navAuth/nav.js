@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import logopurple from "../../assets/logopurple.png";
 
-export const SignInBtn = () => {
+export const Nav = () => {
   return (
     <div className="nav">
       <div className="brand">

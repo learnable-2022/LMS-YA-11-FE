@@ -7,7 +7,7 @@ import finance from "../../assets/finance.png";
 import music from "../../assets/music.png";
 import cooking from "../../assets/cooking.png";
 
-export const SignInBtn = () => {
+export const Range = () => {
   return (
     <div className="range">
       <div className="range-header">

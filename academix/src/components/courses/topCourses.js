@@ -14,7 +14,7 @@ import starfull from "../../assets/starfull.png";
 import starempty from "../../assets/starempty.png";
 import starhalf from "../../assets/starhalf.png";
 
-export const SignInBtn = () => {
+export const TopCourses = () => {
   return (
     <div className="topcourses">
       <div className="headline">
