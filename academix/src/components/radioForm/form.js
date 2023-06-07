@@ -2,7 +2,7 @@ import React from "react";
 import "./form.css";
 import mainlogo from "../../assets/mainlogo.png";
 
-function Form() {
+export default function Form() {
   return (
     <div className="form-container">
       <div className="nav-logo">
@@ -33,8 +33,5 @@ function Form() {
       </form>
     </div>
     </div>
-    
   );
 }
-
-export default Form;
