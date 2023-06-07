@@ -1,8 +1,8 @@
 import React from "react";
 import "./nav.css";
-import logopurple from "../../assets/images/logopurple.png";
+import logopurple from "../../assets/logopurple.png";
 
-export default function Nav() {
+function Nav() {
   return (
     <div className="nav">
       <div className="brand">
@@ -25,3 +25,5 @@ export default function Nav() {
     </div>
   );
 }
+
+export default Nav;

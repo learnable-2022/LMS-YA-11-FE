@@ -13,13 +13,14 @@
   padding-bottom: 50px;
 }
 .instructors h3 {
-  color: #1D262D;
+  color: #1d262d;
   font-size: 28px;
   font-weight: 700;
   padding-bottom: 50px;
 }
 .instructors .photos img {
   margin-left: 30px;
+  width: 150px;
 }
 .instructors .photos img:hover {
   cursor: pointer;
@@ -31,9 +32,32 @@
   color: #252525;
 }
 .instructors .become-one {
-  color: #FF9E00;
+  color: #ff9e00;
   font-weight: 600;
 }
 .instructors .become-one:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 900px) and (min-width: 200px) {
+  .instructors {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .instructors h3 {
+    font-size: 22px;
+    font-weight: 800;
+    padding-bottom: 20px;
+  }
+  .instructors .photos {
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+  .instructors .photos img {
+    width: 60px;
+  }
+  .instructors .share-expertise {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
 }

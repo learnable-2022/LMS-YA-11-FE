@@ -4,55 +4,90 @@
 .range::-webkit-scrollbar {
   display: none;
 }
-.range { 
-   padding-top: 50px;
+.range {
+  padding-top: 50px;
   padding-bottom: 50px;
+  height: 100%;
 }
-.text-container {
+.range-header {
   padding-left: 100px;
-
 }
-.offerings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  /* padding-left: 100px;
-  padding-right: 100px; */
- 
-}
-.text-container h2 {
+.range-header h2 {
   color: #1d262d;
   font-size: 45px;
   font-weight: 600;
 }
-.text-container p {
+.range-header p {
   color: #2b2b2b;
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
   padding-bottom: 30px;
 }
-.top .button,
-.bottom .button {
+.range-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.list-top,
+.list-bottom {
+  display: flex;
+  cursor: pointer;
+}
+.list-top .button,
+.list-bottom .button {
   border: 1.5px solid #6b6b6b;
   border-radius: 10px;
   padding: 5px;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #2b2b2b;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
 }
-.top .development,
-.bottom .music {
-  padding-left: 150px;
-  padding-right: 150px;
+.list-top .development,
+.list-bottom .music {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.top,
-.bottom:hover {
-  cursor: pointer;
+.list-bottom {
+  padding-top: 10px;
 }
-.bottom {
-  padding-top: 20px;
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .range {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+  }
+  .range-header {
+    padding: 0px 50px ;
+  }
+  .range-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .range-header p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+  .range-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-top img, .list-bottom img {
+    width: 130px;
+  }
+  .list-top .button, .list-bottom .button {
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .list-top .development, .list-bottom .music {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

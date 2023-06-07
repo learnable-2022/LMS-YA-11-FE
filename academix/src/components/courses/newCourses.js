@@ -1,17 +1,17 @@
 import React from "react";
-import "../components/topCourses/topCourses.css";
-import orangeline from "../assets/images/orangeline.png";
-import purpleline from "../assets/images/purpleline.png";
-import foundation from "../assets/images/foundation.png";
-import delicious from "../assets/images/delicious.png";
-import adobe from "../assets/images/adobe.png";
-import technology from "../assets/images/technology.png";
-import storytelling from "../assets/images/storytelling.png";
-import melodies from "../assets/images/melodies.png";
-import marketing from "../assets/images/marketing.png";
-import unleash from "../assets/images/unleash.png";
+import './topCourses.css';
+import orangeline from "../../assets/orangeline.png";
+import purpleline from "../../assets/purpleline.png";
+import foundation from "../../assets/foundation.png";
+import delicious from "../../assets/delicious.png";
+import adobe from "../../assets/adobe.png";
+import technology from "../../assets/technology.png";
+import storytelling from "../../assets/storytelling.png";
+import melodies from "../../assets/melodies.png";
+import marketing from "../../assets/marketing.png";
+import unleash from "../../assets/unleash.png";
 
-export default function Newcourses() {
+function Newcourses() {
   return (
     <div className="newcourses">
       <div className="headline">
@@ -22,7 +22,7 @@ export default function Newcourses() {
         </div>
       </div>
       <div className="courses">
-        <div className="top">
+        <div className="courses-top">
           <div className="foundation">
             <img src={foundation} alt="Software development" />
             <p>Software Engineering</p>
@@ -46,7 +46,7 @@ export default function Newcourses() {
             <h2>Web3: Unleashing the Future of Decentralized Technology</h2>
           </div>
         </div>
-        <div className="bottom">
+        <div className="courses-bottom">
           <div className="storytelling">
             <img src={storytelling} alt="Photography" />
             <p>Photography</p>
@@ -81,3 +81,4 @@ export default function Newcourses() {
   );
 }
 
+export default Newcourses;

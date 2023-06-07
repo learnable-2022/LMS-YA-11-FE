@@ -1,8 +1,8 @@
 import React from "react";
 import "../levelUp/levelUp.css";
-import Star3 from "../../assets/images/Star3.png";
+import Star3 from "../../assets/Star3.png";
 
-export default function Levelup() {
+function Levelup() {
   return (
     <div className="levelup">
       <div className="left">
@@ -19,3 +19,4 @@ export default function Levelup() {
   );
 }
 
+export default Levelup;

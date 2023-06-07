@@ -55,3 +55,49 @@
   padding-top: 12px;
   color: #2b2b2b;
 }
+@media screen and (max-width: 900px) and (min-width: 200px) {
+  .testimonials h2 {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 5px;
+  }
+  .testimonials .users {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .users img {
+    width: 100px;
+  }
+  .testimonial-1,
+  .testimonial-2,
+  .testimonial-3 {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .testimonial-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .testimonial-1 img,
+  .testimonial-2 img,
+  .testimonial-3 img {
+    margin-top: -30px;
+  }
+  .user-note h3 {
+    font-weight: 800;
+    padding-top: 10px;
+  }
+  .user-note p {
+    font-weight: 600;
+    line-height: 14px;
+    padding-top: 10px;
+  }
+}

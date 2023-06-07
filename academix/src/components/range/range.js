@@ -1,24 +1,24 @@
 import React from "react";
 import "../range/range.css";
-import design from "../../assets/images/design.png";
-import developer from "../../assets/images/developer.png";
-import web3 from "../../assets/images/web3.png";
-import finance from "../../assets/images/finance.png";
-import music from "../../assets/images/music.png";
-import cooking from "../../assets/images/cooking.png";
+import design from "../../assets/design.png";
+import developer from "../../assets/developer.png";
+import web3 from "../../assets/web3.png";
+import finance from "../../assets/finance.png";
+import music from "../../assets/music.png";
+import cooking from "../../assets/cooking.png";
 
-export default function Range() {
+function Range() {
   return (
     <div className="range">
-      <div className="text-container">
+      <div className="range-header">
         <h2>An Extensive Range of Course Offerings</h2>
         <p>
           Explore our comprehensive catalog of diverse courses, <br /> carefully
           curated to cater to your learning goals.
         </p>
       </div>
-      <div className="offerings">
-        <div className="top">
+      <div className="range-list">
+        <div className="list-top">
           <div className="design">
             <img src={design} alt="designer" />
             <p className="button">Design</p>
@@ -32,7 +32,7 @@ export default function Range() {
             <p className="button">Web 3</p>
           </div>
         </div>
-        <div className="bottom">
+        <div className="list-bottom">
           <div className="finance">
             <img src={finance} alt="finance" />
             <p className="button">Finance</p>
@@ -51,3 +51,4 @@ export default function Range() {
   );
 }
 
+export default Range;

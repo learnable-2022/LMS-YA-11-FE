@@ -15,7 +15,9 @@
 .logo {
   padding-right: 10px;
 }
-.logo:hover, .brand-name, .nav-options {
+.logo:hover,
+.brand-name,
+.nav-options {
   cursor: pointer;
 }
 .brand-name {
@@ -48,7 +50,7 @@ input:focus {
 .navigate {
   font-weight: 500;
   font-size: 18px;
-  color: #1D262D;
+  color: #1d262d;
 }
 .navigate .categories {
   padding-right: 20px;
@@ -60,16 +62,42 @@ input:focus {
   font-size: 14px;
 }
 .buttons .signup {
-  background-color: #FFC826;
+  background-color: #ffc826;
   color: #ffffff;
   margin-right: 8px;
   border: 0px;
 }
 .buttons .signin {
   background-color: #ffffff;
-  color: #FFC826;
-  border: 1px solid #FFC826;
+  color: #ffc826;
+  border: 1px solid #ffc826;
 }
 .buttons button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .nav {
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 22px;
+    padding-top: 5px;
+  }
+  .brand-name {
+    font-size: 14px;
+  }
+  .search {
+    display: none;
+  }
+  .navigate {
+    display: none;
+  }
+  .buttons button {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+  .buttons .signup {
+    margin-right: 5px;
+  }
 }
