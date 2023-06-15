@@ -3,9 +3,8 @@ import Form from "../../components/radioForm/form";
 
 export default function JoiningAs() {
   return (
-    <div className="joiningas" color="white">
+    <div className="joiningas">
       <Form />
     </div>
   );
 }
-

@@ -1,6 +1,12 @@
 * {
   margin: 0;
 }
+.form-container {
+  background-image: url(../../assets/images/Auth-bg-image.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
 .nav-logo img {
   margin: 50px;
   cursor: pointer;
@@ -11,17 +17,13 @@
   margin: auto;
 }
 h1 {
-  color: #1d262d;
+  color: #ffffff;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   padding-top: 30px;
   padding-bottom: 10px;
 }
-/* .form {
-  width: 300px;
-  margin-left: 20px;
-} */
 form span {
   color: #b3b3b3;
   margin-top: 20px;
@@ -55,22 +57,20 @@ input[type="button"] {
 p {
   text-align: center;
   color: #959595;
-  padding-top: 10px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.account-login {
-  text-align: center;
-  font-size: 15px;
-  margin-top: 15px;
+  padding-top: 8px;
+  font-size: 17px;
+  font-weight: 600;
 }
 .signin-link {
   color: #ff9e00;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
   cursor: pointer;
 }
 @media screen and (max-width: 900px) and (min-width: 300px) {
+  .form-container {
+  min-width: 100vh;
+}
   .form {
     width: 300px;
     height: 250px;
