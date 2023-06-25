@@ -2,18 +2,18 @@ import { lazy } from 'react';
 
 // project import
 import Loadable from 'components/Loadable';
+import StudentLayout from 'layout/MainLayout/index'; //shared UI
+import TutorLayout from 'layout/InstructorLayout/index';
+import SamplePage from 'pages/tutor/extra-pages/SamplePage';
 
 // Render Landing age
 const LandingPage = Loadable(lazy(() => import('pages/landing')));
 
 // Render - Student dashboard and utility components
-import StudentLayout from 'layout/MainLayout/index'; //shared UI
 const StudentDashboard = Loadable(lazy(() => import('pages/student/dashboard')));
 const Courses = Loadable(lazy(() => import('pages/student/components-overview/CourseList')));
 
 // Render - Instructor dashboard and utility components
-import TutorLayout from 'layout/InstructorLayout/index';
-import SamplePage from 'pages/tutor/extra-pages/SamplePage';
 const TutorDashboard = Loadable(lazy(() => import('pages/tutor/dashboard')));
 
 // render - sample page
