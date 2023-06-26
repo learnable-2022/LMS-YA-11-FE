@@ -1,0 +1,76 @@
+/* Colors and Styles (Default) */
+:root {
+    --PrimaryColor: hsl(94, 50%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 7%, 69%);
+    --whiteColor: hsl(0, 6%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /* Font and Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.sideBar {
+    background: var(--whiteColor);
+    /*box-shadow: 1px 0px 4px var(--greyText);*/
+    top: 0;
+    gap: 3rem;
+    overflow: auto;
+    padding-bottom: 900px;
+    height: 80%;
+}
+
+.menuLists {
+    .listItem{
+        width: 100%;
+        position: relative;
+        place-items: center;
+        margin: 10px 0 20px 90px;
+        
+
+        &::before{
+            position: absolute;
+            content: '';
+            height: 0%;
+            left: 0;
+            width: 5px;
+            bottom: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: rgb(255, 218, 10);
+        }
+
+        .menuLink {
+            color: rgb(82, 69, 69);
+            font-weight: 300;
+            transition: 0;
+            .icon {
+                margin-right: .5rem;
+            }
+        }
+
+        &:hover .menuLink {
+            color: rgb(255, 218, 10);
+            transition: 0;
+        }
+
+        &:hover::before {
+            height: 100%;
+            transform: .3s ease;
+        }
+    }
+}
+
+span {
+    font-size: 23px;
+}

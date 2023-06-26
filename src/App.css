@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
+  transition: .3s ease;
+}
+
+/* Colors and Styles (Default) */
+:root {
+    --PrimaryColor: hsl(94, 50%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 7%, 69%);
+    --whiteColor: hsl(0, 6%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+  
+    /* Font and Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1rem;
+    --h2FontSize: 1.25rem;
+    --h3FontntSize: 1.5rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .navBar {
+    background-color: var(--whiteColor);
+    padding: 10px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+  }
+
+  .sidebar {
+    width: 18%;
+    margin-top: 30px;
+  }
+
+  main {
+    flex: 1;
+    width: 82%;
+    margin-top: 20px;
+    background-color: rgb(250, 245, 245);
+  }
+
+  /* Default Styles */
+html {
+    font-size: 90%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .icon {
+    font-size: var(--h2FontSize);
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--inputColor);
+    padding: .8rem 1rem;
+    color: var(--textColor);
+  }
+
+  .btn .icon{
+    margin-left: .5rem;
+  }
+  
+  .btn:hover{
+    background: FF9E00;
+    color: var(--whiteColor);
+  }
+  
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }

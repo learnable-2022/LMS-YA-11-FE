@@ -1,0 +1,13 @@
+.nft {
+    margin-left: 35px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+}
+
+.fnt {
+    justify-content: space-between;
+    width: 20%;
+    height: auto;
+}
