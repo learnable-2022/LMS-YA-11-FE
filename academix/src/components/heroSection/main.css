@@ -4,117 +4,159 @@
 .main::-webkit-scrollbar {
   display: none;
 }
-.main {
-  background-color: #7b2cbf;
-  color: #ffffff;
-}
 .main-container {
   height: 100%;
   display: flex;
-  padding: 80px 50px;
+  padding: 10px 0px;
 }
-.main-left,
-.main-right {
-  width: 50%;
+.main-left {
+  width: 100%;
+  padding: 100px 50px 50px 50px;
 }
 .main-left h1 {
-  font-size: 62px;
+  font-size: 70px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 75px;
 }
-.main-right {
-  display: flex;
-  flex-direction: column;
-}
-.main-right .top-image img {
-  width: 240px;
-  padding-right: 10px;
+.main-right img {
+  width: 600px;
   padding-bottom: 10px;
-  margin-top: -20px;
-}
-.main-right .bottom-image img {
-  width: 240px;
-  padding-right: 10px;
 }
 .main-left .potential {
   background-image: url(../../assets/ellipse.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 2px;
 }
 .main-left .join-details {
-  font-size: 18px;
-  font-weight: 350;
+  font-size: 22px;
+  font-weight: 400;
   padding-top: 20px;
 }
 .join-button {
-  padding: 15px 120px;
+  padding: 15px 30px;
   background-color: #ffc826;
-  color: white;
   border: 0px;
   border-radius: 6px;
   font-style: normal;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 20px;
+  box-shadow: 0px 0px 4px grey;
   cursor: pointer;
 }
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+.join-button:hover {
+  color: white;
+  transition: 0.1ms ease-in-out;
+}
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
   .main-container {
-    padding: 50px 100px;
+    padding: 10px 0px;
+  }
+  .main-left {
+    padding: 100px 10px 50px 50px;
   }
   .main-left h1 {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 60px;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
   }
-  .main-right .top-image img {
-    width: 300px;
-    height: 300px;
-    padding-left: 50px;
-    padding-top: 30px;
-  }
-  .main-right .bottom-image,
-  .image-2 {
-    display: none;
-  }
-  .main-left .potential {
-    background-position: 6px;
+  .main-right img {
+    width: 530px;
+    padding-bottom: 10px;
   }
   .main-left .join-details {
-    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
   }
   .join-button {
-    padding: 15px 120px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 900px) and (min-width: 300px) {
+@media screen and (max-width: 1000px) and (min-width: 800px) {
   .main-container {
-    padding: 30px 50px;
+    padding: 5px 0px;
+  }
+  .main-left {
+    padding: 100px 10px 30px 20px;
   }
   .main-left h1 {
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 40px;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 60px;
   }
-  .main-right .top-image img {
-    width: 150px;
-    height: 150px;
-    padding-left: 20px;
-    padding-top: 20px;
-  }
-  .main-right .bottom-image,
-  .image-2 {
-    display: none;
-  }
-  .main-left .potential {
-    background-position: 4px;
+  .main-right img {
+    width: 430px;
+    padding-bottom: 10px;
   }
   .main-left .join-details {
-    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
   }
   .join-button {
-    padding: 7px 50px;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .main-container {
+    padding: 5px 0px;
+  }
+  .main-left {
+    padding: 50px 10px 30px 20px;
+  }
+  .main-left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+  .main-right img {
+    width: 350px;
+    padding-bottom: 10px;
+  }
+  .main-left .join-details {
+    font-size: 11px;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .join-button {
+    padding: 8px 20px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .main-container {
+    padding: 5px 0px;
+  }
+  .main-left {
+    padding: 50px 10px 30px 20px;
+  }
+  .main-left h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .main-right img {
+    width: 250px;
+    padding-bottom: 10px;
+  }
+  .main-left .join-details {
+    font-size: 8px;
+    font-weight: 500;
+    padding-top: 8px;
+  }
+  .join-button {
+    padding: 8px 16px;
+    font-size: 8px;
+    font-weight: 600;
     margin-top: 10px;
   }
 }

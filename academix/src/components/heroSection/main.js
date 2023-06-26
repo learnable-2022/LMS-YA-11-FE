@@ -1,9 +1,6 @@
 import React from "react";
 import "../heroSection/main.css";
-import Star from "../../assets/Star.png";
-import Star1 from "../../assets/Star1.png";
-import Star2 from "../../assets/Star2.png";
-import Star3 from "../../assets/Star3.png";
+import hero from "../../assets/images/hero-image.png";
 
 export const Main = () => {
   return (
@@ -16,39 +13,20 @@ export const Main = () => {
           </h1>
           <p className="join-details">
             Discover a world of endless possibilities with our cutting-edge
-            <br /> Learning Management System. Dive into engaging courses,
-            <br /> interactive resources, and personalized learning paths. Join
-            us <br /> today and empower your future!
+            Learning Management System. Dive into engaging courses, interactive
+            resources, and personalized learning paths. Join us today and
+            empower your future!
           </p>
           <button className="join-button">Join Now</button>
         </div>
         <div className="main-right">
-          <div className="top-image">
-            <img
-              src={Star}
-              alt="Image of a boy on computer"
-              className="image-1"
-            />
-            <img
-              src={Star1}
-              alt="Image of a smiling lady"
-              className="image-2"
-            />
-          </div>
-          <div className="bottom-image">
-            <img
-              src={Star2}
-              alt="Image of a man staring at a computer"
-              className="image-3"
-            />
-            <img
-              src={Star3}
-              alt="Image of a lady on computer"
-              className="image-4"
-            />
-          </div>
+          <img
+            src={hero}
+            alt="Image of a boy on computer"
+            className="image-1"
+          />
         </div>
       </div>
     </div>
   );
-}
+};

@@ -6,22 +6,31 @@
 }
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0px 70px;
   background-color: #ffffff;
   height: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .logo {
   padding-right: 10px;
 }
-.logo:hover,
-.brand-name,
-.nav-options {
+.brand {
+  display: flex;
+}
+.brand,
+.navigate {
+  display: flex;
+  padding-top: 20px;
   cursor: pointer;
 }
+.categories:hover, .about:hover {
+  color: #ffc826;
+  transition: 0.1ms ease-in-out;
+}
 .brand-name {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   color: #5a189a;
 }
@@ -33,8 +42,9 @@
   align-items: center;
   border-radius: 8px;
   border: 1px solid white;
+  margin-top: 20px;
   background-color: white;
-  box-shadow: 0px 0px 3px grey;
+  box-shadow: 0px 0px 4px grey;
 }
 .search input {
   background-color: transparent;
@@ -55,49 +65,111 @@ input:focus {
 .navigate .categories {
   padding-right: 20px;
 }
-.buttons button {
-  padding: 6px 18px;
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 14px;
-}
-.buttons .signup {
+.buttons .get-started {
   background-color: #ffc826;
   color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 550;
   margin-right: 8px;
   border: 0px;
+  box-shadow: 0px 0px 4px grey;
 }
-.buttons .signin {
-  background-color: #ffffff;
-  color: #ffc826;
-  border: 1px solid #ffc826;
-}
-.buttons button:hover {
+.get-started:hover {
   cursor: pointer;
+  border: 2px solid white;
+  transition: 0.1ms ease-in-out;
 }
-@media screen and (max-width: 900px) and (min-width: 300px) {
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
   .nav {
-    padding: 10px 20px;
-    justify-content: space-between;
+    padding: 20px 50px;
   }
   .logo img {
-    width: 22px;
-    padding-top: 5px;
+    width: 30px;
+    padding-left: 10px;
+  }
+  .brand,
+  .navigate {
+    padding-top: 10px;
   }
   .brand-name {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .search {
+    margin-top: 10px;
+  }
+  .categories,
+  .about {
+    font-size: 16px;
+  }
+  .navigate .categories {
+    padding-right: 20px;
+  }
+  .buttons .get-started {
+    padding: 12px 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .nav {
+    padding: 20px 50px;
+  }
+  .logo img {
+    width: 25px;
+  }
+  .brand,
+  .navigate {
+    padding-top: 10px;
+  }
+  .brand-name {
+    font-weight: 700;
     font-size: 14px;
   }
   .search {
     display: none;
   }
+  .categories,
+  .about {
+    font-size: 14px;
+  }
+  .buttons .get-started {
+    padding: 8px 18px;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .nav {
+    padding: 10px 30px;
+  }
+  .logo img {
+    width: 25px;
+  }
+  .brand,
   .navigate {
+    padding-top: 10px;
+  }
+  .brand-name {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .search {
     display: none;
   }
-  .buttons button {
-    padding: 6px 16px;
-    font-size: 12px;
+  .categories,
+  .about {
+    font-size: 14px;
   }
-  .buttons .signup {
-    margin-right: 5px;
+  .buttons .get-started {
+    padding: 8px 12px;
+    margin-top: 5px;
+    font-size: 12px;
+    margin-right: 10px;
   }
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import "./nav.css";
-import logopurple from "../../assets/logopurple.png";
+import logopurple from "../../assets/images/logopurple.png";
 
 export const Nav = () => {
   return (
     <div className="nav">
       <div className="brand">
         <span className="logo">
-          <img src={logopurple} alt="logo" width={35} />
+          <img src={logopurple} alt="logo" width={40} />
         </span>
         <span className="brand-name">Academix</span>
       </div>
@@ -19,9 +19,8 @@ export const Nav = () => {
         <span className="about">About Us</span>
       </div>
       <div className="buttons">
-        <button className="signup">Sign Up</button>
-        <button className="signin">Sign In</button>
+        <button className="get-started">Get Started for Free</button>
       </div>
     </div>
   );
-}
+};
