@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+}
+.service::-webkit-scrollbar {
+  display: none;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.service-info {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.service-info h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.service-info p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.service-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  cursor: pointer;
+}
+.design {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.training-info p {
+  font-size: 10px;
+}
+.training-info h2 {
+  font-size: 16px;
+  font-weight: 700;
+  width: 60%;
+}
+.more-button {
+  border: 1px solid #ffc826;
+  color: #ffc826;
+  font-weight: 600;
+  font-size: 18px;
+  width: 30%;
+  text-align: center;
+  padding: 10px 25px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.more-button:hover {
+  background-color: #ffc826;
+  color: white;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: 0.1ms ease-in-out;
+  box-shadow: 0px 0px 4px grey;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .service-info {
+    padding-bottom: 30px;
+  }
+  .service-info h2 {
+    font-size: 28px;
+  }
+  .service-info p {
+    font-size: 16px;
+  }
+  .service-courses {
+    padding-bottom: 30px;
+    width: 80%;
+    padding-left: 100px;
+  }
+  .design {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .training img,
+  .design img,
+  .development img {
+    width: 250px;
+  }
+  .training-info p {
+    font-size: 10px;
+  }
+  .training-info h2 {
+    font-size: 16px;
+    width: 80%;
+  }
+  .more-button {
+    font-size: 14px;
+    padding: 10px 16px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .service-info {
+    padding-bottom: 20px;
+  }
+  .service-info h2 {
+    font-size: 24px;
+  }
+  .service-info p {
+    font-size: 12px;
+  }
+  .service-courses {
+    padding-bottom: 30px;
+    width: 80%;
+    padding-left: 100px;
+  }
+  .design {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .training img,
+  .design img,
+  .development img {
+    width: 200px;
+  }
+  .training-info p {
+    font-size: 8px;
+  }
+  .training-info h2 {
+    font-size: 14px;
+    width: 80%;
+  }
+  .more-button {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .service-info {
+    padding-bottom: 20px;
+  }
+  .service-info h2 {
+    font-size: 22px;
+  }
+  .service-info p {
+    font-size: 10px;
+  }
+  .service-courses {
+    padding-bottom: 30px;
+    width: 70%;
+    padding-left: 70px;
+  }
+  .design {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .training img,
+  .design img,
+  .development img {
+    width: 130px;
+  }
+  .training-info p {
+    font-size: 8px;
+  }
+  .training-info h2 {
+    font-size: 14px;
+    width: 100%;
+  }
+  .more-button {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin-top: 20px;
+  }
+}

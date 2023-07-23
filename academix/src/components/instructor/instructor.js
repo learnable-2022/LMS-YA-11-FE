@@ -5,11 +5,17 @@ import instructor2 from "../../assets/images/instructor2.png";
 import instructor3 from "../../assets/images/instructor3.png";
 import instructor4 from "../../assets/images/instructor4.png";
 import instructor5 from "../../assets/images/instructor5.png";
+import cuate from "../../assets/images/cuate.png";
 
-export default function Instructors() {
+export const Instructors = () => {
   return (
     <div className="instructors">
-      <h3>Courses taught by World Class Instructors</h3>
+      <h3>
+        Be taught by World Class Instructors
+        <span>
+          <img src={cuate} alt="" />
+        </span>
+      </h3>
       <div className="photos">
         <img src={instructor1} alt="A male instructor" />
         <img src={instructor2} alt="A female instructor" />
@@ -23,5 +29,4 @@ export default function Instructors() {
       </p>
     </div>
   );
-}
-
+};

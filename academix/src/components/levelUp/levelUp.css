@@ -4,34 +4,120 @@
 .levelup::-webkit-scrollbar {
   display: none;
 }
-.levelup {
+.levelup-container {
+  margin-top: -20px;
+  background-color: #edeaff;
+  padding: 50px;
+}
+.text-wrap {
   display: flex;
+  justify-content: space-between;
   color: #ffffff;
-  background-color: #5A189A;
-  padding: 30px 50px;
-  margin: 50px 150px ;
-
-  border-radius: 40px;
+  background-color: #7b3aec;
+  margin: 10px 50px;
+  border-radius: 20px;
 }
 .levelup .left {
-  margin-right: 180px;
+  margin-left: 50px;
 }
 .left h2 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
   padding-top: 20px;
+  line-height: 55px;
 }
 .left button {
   padding: 15px 100px;
   margin-top: 20px;
-  background-color: #FFC826;
+  background-color: #ffc826;
   color: white;
   border: 0px;
   border-radius: 6px;
+  cursor: pointer;
 }
 .left button:hover {
-  cursor: pointer;
+  border: 1px solid white;
+  font-weight: 600;
+  transition: 0.1ms ease-in-out;
 }
 .right img {
   width: 200px;
+  padding: 10px 30px;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .text-wrap {
+    margin: 10px 80px;
+    border-radius: 20px;
+  }
+  .levelup .cuate {
+    width: 100px;
+  }
+  .levelup .left {
+    margin-left: 30px;
+  }
+  .left h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 20px;
+    line-height: 40px;
+  }
+  .left button {
+    padding: 15px 70px;
+    margin-top: 15px;
+  }
+  .right img {
+    width: 150px;
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .text-wrap {
+    margin: 50px 50px;
+    border-radius: 20px;
+  }
+  .levelup .cuate {
+    width: 100px;
+  }
+  .levelup .left {
+    margin-left: 20px;
+  }
+  .left h2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 25px;
+    line-height: 30px;
+  }
+  .left button {
+    padding: 10px 50px;
+    margin-top: 10px;
+  }
+  .right img {
+    width: 150px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .text-wrap {
+    margin: 10px 10px;
+    border-radius: 15px;
+  }
+  .levelup .cuate {
+    width: 100px;
+  }
+  .levelup .left {
+    margin-left: 10px;
+  }
+  .left h2 {
+    font-size: 20px;
+    padding-top: 15px;
+    line-height: 25px;
+  }
+  .left button {
+    padding: 8px 30px;
+    margin-top: 10px;
+  }
+  .right img {
+    width: 100px;
+    padding: 10px 10px;
+  }
 }

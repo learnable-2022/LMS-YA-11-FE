@@ -4,11 +4,11 @@ import testimonial1 from "../../assets/images/testimonial1.png";
 import testimonial2 from "../../assets/images/testimonial2.png";
 import testimonial3 from "../../assets/images/testimonial3.png";
 
-function Testimonials() {
+export const Testimonials = () => {
   return (
     <div className="testimonials">
       <h2>
-        Testimonials From Our <span className="wonderful">Wonderful</span> Users
+        Our Success <span className="stories">Stories</span>
       </h2>
       <div className="users">
         <div className="testimonial-1">
@@ -48,6 +48,4 @@ function Testimonials() {
       </div>
     </div>
   );
-}
-
-export default Testimonials;
+};

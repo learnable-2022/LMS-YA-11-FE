@@ -1,58 +1,277 @@
 * {
   margin: 0;
 }
-.range::-webkit-scrollbar {
+.range-container::-webkit-scrollbar {
   display: none;
 }
-.range { 
-   padding-top: 50px;
-  padding-bottom: 50px;
+.range-container {
+  padding: 100px 20px;
 }
-.text-container {
-  padding-left: 100px;
-
-}
-.offerings {
+.course-offering,
+.tutoring,
+.teaching-style {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  /* padding-left: 100px;
-  padding-right: 100px; */
- 
 }
-.text-container h2 {
-  color: #1d262d;
-  font-size: 45px;
-  font-weight: 600;
-}
-.text-container p {
-  color: #2b2b2b;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 35px;
+.catalogue-left,
+.catalogue-right {
+  width: 50%;
   padding-bottom: 30px;
 }
-.top .button,
-.bottom .button {
-  border: 1.5px solid #6b6b6b;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #ffffff;
-  color: #2b2b2b;
-  text-align: center;
-  font-size: 22px;
+.offering {
+  padding-right: 50px;
+}
+.offering h2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  padding-bottom: 20px;
+}
+.offering p,
+.tutoring p,
+.teaching-style p {
+  font-size: 25px;
   font-weight: 400;
+  line-height: 30px;
 }
-.top .development,
-.bottom .music {
-  padding-left: 150px;
-  padding-right: 150px;
+.course-offering,
+.teaching-style {
+  padding-left: 30px;
 }
-.top,
-.bottom:hover {
-  cursor: pointer;
+.course-offering .offering,
+.teaching-style .catalogue-left {
+  padding-top: 50px;
 }
-.bottom {
-  padding-top: 20px;
+.tutoring {
+  padding-left: 100px;
+  padding-right: 120px;
+}
+.tutoring .catalogue-right,
+.teaching-style .catalogue-left {
+  padding-top: 100px;
+}
+.tutoring .catalogue-right h2,
+.teaching-style .catalogue-left h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+.teaching-style .catalogue-left {
+  padding-right: 100px;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .range-container {
+    padding: 100px 20px;
+  }
+  .catalogue-left,
+  .catalogue-right {
+    padding-bottom: 20px;
+  }
+  .offering {
+    padding-right: 30px;
+  }
+  .offering h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 45px;
+  }
+  .offering p,
+  .tutoring p,
+  .teaching-style p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .course-offering,
+  .teaching-style {
+    padding-left: 20px;
+  }
+  .course-offering .offering,
+  .teaching-style .catalogue-left {
+    padding-top: 50px;
+  }
+  .tutoring {
+    padding-left: 50px;
+    padding-right: 70px;
+  }
+  .tutoring .catalogue-right h2,
+  .teaching-style .catalogue-left h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 55px;
+    padding-bottom: 10px;
+  }
+  .teaching-style .catalogue-left {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .range-container {
+    padding: 100px 20px;
+  }
+  .catalogue-left,
+  .catalogue-right {
+    padding-bottom: 20px;
+  }
+  .offering {
+    padding-right: 30px;
+  }
+  .offering h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+  }
+  .offering p,
+  .tutoring p,
+  .teaching-style p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .course-offering,
+  .teaching-style {
+    padding-left: 20px;
+  }
+  .course-offering .offering,
+  .teaching-style .catalogue-left {
+    padding-top: 50px;
+  }
+  .tutoring {
+    padding-left: 50px;
+    padding-right: 70px;
+  }
+  .tutoring .catalogue-right h2,
+  .teaching-style .catalogue-left h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45px;
+    padding-bottom: 10px;
+  }
+  .teaching-style .catalogue-left {
+    padding-right: 50px;
+  }
+  .offering-options img {
+    width: 400px;
+    padding-top: 30px;
+  }
+  .catalogue-left img, .catalogue-right img {
+    width: 300px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+.range-container {
+    padding: 50px 20px;
+  }
+  .catalogue-left,
+  .catalogue-right {
+    padding-bottom: 20px;
+  }
+  .offering {
+    padding-right: 30px;
+  }
+  .offering h2 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .offering p,
+  .tutoring p,
+  .teaching-style p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .course-offering,
+  .teaching-style {
+    padding-left: 20px;
+  }
+  .course-offering .offering,
+  .teaching-style .catalogue-left {
+    padding-top: 50px;
+  }
+  .tutoring {
+    padding-left: 50px;
+    padding-right: 70px;
+  }
+  .tutoring .catalogue-right h2,
+  .teaching-style .catalogue-left h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    padding-bottom: 10px;
+  }
+  .teaching-style .catalogue-left {
+    padding-right: 50px;
+  }
+  .offering-options img {
+    width: 400px;
+    padding-top: 30px;
+  }
+  .tutoring .catalogue-right {
+    padding-left: 30px;
+  }
+  .catalogue-left img, .catalogue-right img {
+    width: 300px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .range-container {
+    padding: 50px 10px;
+  }
+  .course-offering,
+  .tutoring,
+  .teaching-style {
+    display: flex;
+    flex-direction: column;
+  }
+  .catalogue-left,
+  .catalogue-right {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .offering {
+    padding-right: 0px;
+  }
+  .offering h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    padding-bottom: 10px;
+  }
+  .offering p,
+  .teaching-style p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .course-offering,
+  .teaching-style {
+    padding-left: 10px;
+  }
+  .course-offering .offering,
+  .teaching-style .catalogue-left {
+    padding-top: 0px;
+  }
+  .tutoring {
+    display: none;
+  }
+  .teaching-style .catalogue-left {
+    padding-top: 20px;
+  }
+  .teaching-style .catalogue-left h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    padding-bottom: 10px;
+  }
+  .teaching-style .catalogue-left {
+    padding-right: 0px;
+  }
+  .offering-options img,
+  .catalogue-right img {
+    width: 450px;
+    padding-top: 30px;
+  }
 }

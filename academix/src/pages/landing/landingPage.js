@@ -1,29 +1,26 @@
-import React from 'react'
-import Nav from '../../components/navAuth/nav';
-import Main from '../../components/heroSection/main';
-import Range from '../../components/range/range';
-import Topcourses from '../../components/topCourses/topCourses';
-import Instructors from '../../components/instructor/instructor';
-import Levelup from '../../components/levelUp/levelUp';
-import Newcourses from '../../components/newCourses';
-import Footer from '../../components/footer/footer';
+import React from "react";
+import Nav from "../components/navAuth/nav.js";
+import Main from "../components/heroSection/main.js";
+import Range from "../components/range/range.js";
+import Instructors from "../components/instructor/instructor.js";
+import Testimonials from "../components/testimonials/testimonials.js";
+import LevelUp from "../components/levelUp/levelUp.js";
+import Service from "../components/serviceEnroll/service.js";
+import Enroll from "../components/serviceEnroll/enroll.js";
+import Footer from "../components/footer/footer.js";
 
-
-const LandingPage = () => {
+export default function LandingPage() {
   return (
     <>
       <Nav />
       <Main />
       <Range />
-      <Topcourses />
       <Instructors />
-      <Levelup />
-      <Newcourses />
-      <Footer/>
+      <Testimonials />
+      <LevelUp />
+      <Service />
+      <Enroll />
+      <Footer />
     </>
-  )
+  );
 }
-
-export default LandingPage;
- 
-
